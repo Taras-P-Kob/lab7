@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сонячна система</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- jQuery UI for Accordion and Datepicker -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // Initialize Owl Carousel
+            $('.owl-carousel').owlCarousel({
+                loop: true, // Loop the carousel
+                margin: 10, // Margin between items
+                nav: true,  // Show next/prev buttons
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            });
+
+            // Initialize Accordion
+            $("#accordion").accordion();
+
+            // Initialize Datepicker
+            $("#datepicker").datepicker();
+
+            $("input[type='button']").click(function(event){
+                alert("Вітаю, ви підключені!");
+            });
+        });
+    </script>
+
+    <style>
+        .accordion-section {
+            margin-top: 20px;
+        }
+        .owl-carousel img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>На цьому сайті я використав jQuery, Owl Carousel, Accordion, та Datepicker!</h1>
+    
+ <!-- Carousel container -->
+    <div class="owl-carousel">
+        <div><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fnssdc.gsfc.nasa.gov%2Fplanetary%2Fimage%2Fsun.jpg&f=1&nofb=1&ipt=5a0738b0738e89466a0ffea4e61fcbe43840951bc16e2572c82c82e4058f403c&ipo=images" alt="Image 0"></div>
+        <div><img src="https://www.popsci.com/wp-content/uploads/2019/01/07/RZODSOHKA6O4VMNPPUW7GUTUBE.jpg?w=2048&h=2048" alt="Image 1"></div>
+        <div><img src="https://www.popsci.com/wp-content/uploads/2019/01/07/LP5TMWXTF6VV6VQ6YDQGZ3YLQQ.jpg" alt="Image 2"></div>
+        <div><img src="https://www.popsci.com/wp-content/uploads/2019/01/07/57LV7D7YHYJ2BDWMUKBC3J5WG4.jpg" alt="Image 3"></div>
+        <div><img src="https://www.popsci.com/wp-content/uploads/2019/01/07/XYNJU7VV7ISTJ4HJLUR5ERUZOE.jpg" alt="Image 4"></div>
+        <div><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.zmescience.com%2Fwp-content%2Fuploads%2F2019%2F08%2Fstsci-h-p1936a-m-1999x2000.png&f=1&nofb=1&ipt=f991d0102bcd4ddf06de119481c3e0890ab50f971e6053f0bda120e1350e9dff&ipo=images" alt="Image 5"></div>
+        <div><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fspace-facts.com%2Fwp-content%2Fuploads%2Fsaturn.png&f=1&nofb=1&ipt=6c6a4a174b6324dd9a22109d54e653afd24435c2d551c5b6a47a671e3ccba709&ipo=images" alt="Image 6"></div>
+        <div><img src="https://www.popsci.com/wp-content/uploads/2019/01/07/2JK6SFTHA6WHV56FGHXNWWNDSE.jpg" alt="Image 7"></div>
+        <div><img src="https://www.popsci.com/wp-content/uploads/2019/01/07/3BR7HFELGONI3J4CB4USPR5GWI.jpg" alt="Image 8"></div>
+	<div><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fblogs.nasa.gov%2Fpluto%2Fwp-content%2Fuploads%2Fsites%2F253%2F2015%2F10%2Fpluto-heart.png&f=1&nofb=1&ipt=9fdc7dda8a643c797710400abdddcc901466fd602d244d98ec47647570cfc3f2&ipo=images" alt="Image 9"></div>
+    </div>    <!-- Accordion Section -->
+    <div class="accordion-section">
+        <h2>Що вони з себе представляють</h2>
+        <div id="accordion">
+
+            <h3>Сонце</h3>
+            <div>
+		    <p>Зірка, навколо якої обертаються всі планети Сонячної системи. Це величезна куля гарячого плазмового газу, що забезпечує енергією Землю та всі інші планети.</p>
+            </div>
+            <h3>Меркурій</h3>
+            <div>
+                <p>Найменша і найближча до Сонця планета. Має скелясту поверхню і майже не має атмосфери, через що температура на ній сильно змінюється між днем і ніччю.</p>
+            </div>
+
+	    <h3>Венера</h3>
+            <div>
+                <p>Схожа за розміром до Землі, але має густу атмосферу з вуглекислого газу, що створює сильний парниковий ефект, роблячи її найгарячішою планетою.</p>
+            </div>
+	
+	    <h3>Земля</h3>
+            <div>
+                <p>Єдина планета, відома науці, де існує життя. Має водну поверхню та атмосферу, що складається з азоту, кисню та інших газів, що підтримують живі організми.</p>
+            </div>
+	
+	    <h3>Марс</h3>
+            <div>
+                <p>Відома як "Червона планета" через оксид заліза на поверхні. Можливо, у минулому мала воду в рідкому стані, і зараз досліджується як потенційна планета для майбутньої колонізації.</p>
+            </div>
+	
+	    <h3>Юпітер</h3>
+            <div>
+                <p>Найбільша планета Сонячної системи, газовий гігант із великою кількістю супутників та знаменитою Великою Червоною Плямою — гігантським штормом, що триває століттями.</p>
+            </div>
+	
+	    <h3>Сатурн</h3>
+            <div>
+                <p>Відомий своїми вражаючими кільцями, що складаються з льоду та пилу. Це ще один газовий гігант із численними супутниками.</p>
+            </div>
+	
+	    <h3>Уран</h3>
+            <div>
+                <p>Газовий гігант із блакитним кольором через метан в атмосфері. Ось обертання Урана сильно нахилений, через що він фактично "лежить на боці".</p>
+            </div>
+	
+	    <h3>Нептун</h3>
+            <div>
+                <p>Остання офіційна планета Сонячної системи, газовий гігант із надзвичайно сильними вітрами. Його синій колір теж обумовлений метаном в атмосфері.</p>
+            </div>
+	
+	    <h3>Плутон</h3>
+            <div>
+                <p>Колишня дев'ята планета, нині класифікується як карликова планета. Має крижану поверхню і дуже ексцентричну орбіту.</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Datepicker Section -->
+    <div>
+        <h2>Коли в останній раз ви бачили НЛО?</h2>
+        <input type="text" id="datepicker">
+    </div>
+    
+    <input type="button" value="Ловити зв'язок з космосом">
+</body>
+</html>
+
