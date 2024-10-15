@@ -7,6 +7,25 @@ body {
     color: #333;
 }
 
+
+
+.container {
+    max-width: 1200px; /* Обмеження ширини */
+    margin: 0 auto; /* Центрування контейнера */
+    padding: 20px; /* Внутрішні відступи */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для краси */
+    background-color: #fff; /* Фоновий колір */
+    border-radius: 10px; /* Заокруглені кути */
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 h1 {
     color: #2c3e50;
     text-align: center;
@@ -16,6 +35,9 @@ h1 {
 
 /* Carousel Styles */
 .owl-carousel {
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
